@@ -1,0 +1,11 @@
+# Local build and interpreter artifacts
+path_benchmark
+*.o
+*.out
+__pycache__/
+*.py[cod]
+
+# Generated benchmark output; preserve only methodology documentation.
+/results/*
+!/results/statistical_methods.md
+/output/
