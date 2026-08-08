@@ -1,0 +1,25 @@
+planner,scenario,phase,attempted_count,completed_count,completion_rate,oom_count,other_failure_count,median_elapsed_us_completed_only,q1_elapsed_us_completed_only,q3_elapsed_us_completed_only,p95_elapsed_us_completed_only,median_expanded_nodes_completed_only,since_boot_minimum_free_heap,failure_stages,notes
+AStar,initial_100x100_density20,initial,30,30,1.0,0,0,187265.5,154788.0,216518.5,238623.8,1291.0,73796,,since_boot_minimum_free_heap is a global low-water mark
+AStar,initial_50x50_density10,initial,30,30,1.0,0,0,36253.5,26639.75,44313.25,48117.7,228.5,240460,,since_boot_minimum_free_heap is a global low-water mark
+AStar,initial_500x500_density20,initial,30,0,0.0,30,0,,,,,,299280,grid_allocation,since_boot_minimum_free_heap is a global low-water mark
+AStar,dynamic_100x100_density20,initial,30,30,1.0,0,0,187177.0,154658.25,216408.75,238532.95,1291.0,46480,,since_boot_minimum_free_heap is a global low-water mark
+AStar,dynamic_100x100_density20,replan,30,30,1.0,0,0,208927.5,183485.25,238215.25,284276.0,1414.5,46480,,since_boot_minimum_free_heap is a global low-water mark
+AStar,dynamic_50x50_density10,initial,30,30,1.0,0,0,36161.5,26510.25,44211.75,48028.75,228.5,230940,,since_boot_minimum_free_heap is a global low-water mark
+AStar,dynamic_50x50_density10,replan,30,30,1.0,0,0,36085.5,28811.0,42572.0,60682.0,227.5,230940,,since_boot_minimum_free_heap is a global low-water mark
+AStar,dynamic_500x500_density30,initial_or_replan,30,0,0.0,30,0,,,,,,299280,grid_allocation,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,initial_100x100_density20,initial,30,30,1.0,0,0,916859.0,821220.25,1222645.0,1247524.1,1099.5,128336,,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,initial_50x50_density10,initial,30,30,1.0,0,0,207161.0,137541.75,260102.75,325636.6,217.5,244804,,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,initial_500x500_density20,initial,30,0,0.0,30,0,,,,,,299280,grid_allocation,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,dynamic_100x100_density20,initial,30,30,1.0,0,0,916800.5,821169.0,1222583.25,1247462.8,1099.5,46480,,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,dynamic_100x100_density20,repair,30,30,1.0,0,0,544644.0,361120.25,571413.25,654371.55,1657.5,46480,,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,dynamic_50x50_density10,initial,30,30,1.0,0,0,207134.0,137496.25,260059.25,325606.1,217.5,230940,,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,dynamic_50x50_density10,repair,30,30,1.0,0,0,7226.5,7095.0,10814.5,281474.0,220.0,230940,,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,dynamic_500x500_density30,initial_or_replan,30,0,0.0,30,0,,,,,,299280,grid_allocation,since_boot_minimum_free_heap is a global low-water mark
+JPS,initial_100x100_density20,initial,30,30,1.0,0,0,147122.5,132389.25,160367.75,184158.2,638.5,113620,,since_boot_minimum_free_heap is a global low-water mark
+JPS,initial_50x50_density10,initial,30,30,1.0,0,0,26148.0,21374.0,34136.25,37858.4,88.0,253572,,since_boot_minimum_free_heap is a global low-water mark
+JPS,initial_500x500_density20,initial,30,0,0.0,30,0,,,,,,299280,grid_allocation,since_boot_minimum_free_heap is a global low-water mark
+JPS,dynamic_100x100_density20,initial,30,30,1.0,0,0,144807.0,130436.75,157755.75,181211.4,638.5,46480,,since_boot_minimum_free_heap is a global low-water mark
+JPS,dynamic_100x100_density20,replan,30,30,1.0,0,0,151942.0,137654.0,173731.25,214306.1,676.5,46480,,since_boot_minimum_free_heap is a global low-water mark
+JPS,dynamic_50x50_density10,initial,30,30,1.0,0,0,25892.5,21196.5,33867.75,37488.3,88.0,230940,,since_boot_minimum_free_heap is a global low-water mark
+JPS,dynamic_50x50_density10,replan,30,30,1.0,0,0,24981.0,22823.25,35480.75,45395.55,85.5,230940,,since_boot_minimum_free_heap is a global low-water mark
+JPS,dynamic_500x500_density30,initial_or_replan,30,0,0.0,30,0,,,,,,299280,grid_allocation,since_boot_minimum_free_heap is a global low-water mark

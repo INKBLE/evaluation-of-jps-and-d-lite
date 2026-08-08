@@ -1,0 +1,202 @@
+:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da40h ( 55872) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da68 vaddr=3ffb0000 size=0221ch (  8732) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fc8c vaddr=40080000 size=0038ch (   908) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1f254h (127572) map[0m
+[0;32mI (181) esp_image: segment 4: paddr=0003f27c vaddr=4008038c size=0c4b8h ( 50360) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (228) cpu_start: Pro cpu start user code[0m
+[0;32mI (228) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (228) cpu_start: Application information:[0m
+[0;32mI (231) cpu_start: Project name:     path_planner_benchmark[0m
+[0;32mI (237) cpu_start: App version:      1[0m
+[0;32mI (242) cpu_start: Compile time:     Aug  8 2026 11:57:02[0m
+[0;32mI (248) cpu_start: ELF file SHA256:  77a325858...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B90 len 0002D470 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008C844 len 000137BC (77 KiB): IRAM[0m
+[0;32mI (312) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (343) path_benchmark: csv_header,experiment_id,planner,phase,grid_width,grid_height,density,update_mode,map_id,seed,repetition,warmup,status,success,path_cost,expanded_nodes,elapsed_us,free_heap_before,free_heap_after,since_boot_minimum_free_heap_before,since_boot_minimum_free_heap_after,failed_alloc_bytes,failure_stage,failure_reason,update_x,update_y,psram_enabled,cpu_frequency_mhz,esp_idf_version,firmware_git_commit[0m
+[0;32mI (373) path_benchmark: profile,planner=DStarLite,scenario=dynamic_100x100_density20,instance_start=0,instance_count=10,warmups=1,measurements=3,experiment_id=esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,firmware_git_commit=unavailable,psram_enabled=0,cpu_frequency_mhz=160,esp_idf_version=v5.2.2[0m
+[0;32mI (3453) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i0,7820,0,0,OK,1,1452,995,830134,259428,166272,98088,98088,0,none,none,51,49,0,160,v5.2.2,unavailable[0m
+[0;32mI (4073) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i0,7820,0,0,OK,1,1464,1691,609358,167300,144504,98088,98088,0,none,none,51,49,0,160,v5.2.2,unavailable[0m
+[0;32mI (5313) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i0,7820,1,0,OK,1,1452,995,830194,259428,166272,98088,98088,0,none,none,51,49,0,160,v5.2.2,unavailable[0m
+[0;31mE (5343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (5343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (5343) task_wdt: Tasks currently running:[0m
+[0;31mE (5343) task_wdt: CPU 0: main[0m
+[0;31mE (5343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (5343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x40081CA9:0x3FFB4A90 0x40081EDA:0x3FFB4AB0 0x4008B2E1:0x3FFB4AD0 0x400DE419:0x3FFB4AF0 0x400DD5DD:0x3FFB4B10 0x400D76D7:0x3FFB4B30 0x400D76F6:0x3FFB4B50 0x400D7701:0x3FFB4B70 0x400D8C8D:0x3FFB4B90 0x400D8E3A:0x3FFB4BE0 0x400D8F85:0x3FFB4C40 0x400D92C8:0x3FFB4C90 0x400D9301:0x3FFB4CB0 0x400DA489:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (6003) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i0,7820,1,0,OK,1,1464,1691,674017,167300,144504,98088,98088,0,none,none,51,49,0,160,v5.2.2,unavailable[0m
+[0;32mI (7243) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i0,7820,2,0,OK,1,1452,995,830207,259428,166272,98088,98088,0,none,none,51,49,0,160,v5.2.2,unavailable[0m
+[0;32mI (7863) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i0,7820,2,0,OK,1,1464,1691,609353,167300,144504,98088,98088,0,none,none,51,49,0,160,v5.2.2,unavailable[0m
+[0;31mE (10343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (10343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (10343) task_wdt: Tasks currently running:[0m
+[0;31mE (10343) task_wdt: CPU 0: main[0m
+[0;31mE (10343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (10343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x4000BFED:0x3FFB4A20 0x400861F1:0x3FFB4A30 0x4008A131:0x3FFB4A50 0x4008A0F5:0x3FFB4A70 0x40081EF2:0x3FFB4A90 0x4008B2E1:0x3FFB4AB0 0x400DE419:0x3FFB4AD0 0x400DD5DD:0x3FFB4AF0 0x400D76D7:0x3FFB4B10 0x400D76F6:0x3FFB4B30 0x400D7701:0x3FFB4B50 0x400D8C8D:0x3FFB4B70 0x400D8E3A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (11473) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i1,7821,0,0,OK,1,1464,1410,1243103,259428,137320,96612,96612,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (11843) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i1,7821,0,0,OK,1,1464,1816,361137,138348,129100,96612,96612,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (13443) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i1,7821,1,0,OK,1,1464,1410,1175262,259428,137320,96612,96612,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (13813) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i1,7821,1,0,OK,1,1464,1816,361129,138348,129100,96612,96612,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;31mE (15343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (15343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (15343) task_wdt: Tasks currently running:[0m
+[0;31mE (15343) task_wdt: CPU 0: main[0m
+[0;31mE (15343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (15343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x4008B2D5:0x3FFB4AA0 0x400DDE11:0x3FFB4AC0 0x400D7F77:0x3FFB4AE0 0x400D7FA6:0x3FFB4B00 0x400D8046:0x3FFB4B30 0x400D80ED:0x3FFB4B50 0x400D8E2A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (15473) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i1,7821,2,0,OK,1,1464,1410,1231702,259428,137320,96612,96612,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (15843) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i1,7821,2,0,OK,1,1464,1816,361140,138348,129100,96612,96612,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (19963) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i2,7822,0,0,OK,1,1464,1469,1247420,259428,131744,78540,78540,0,none,none,52,45,0,160,v5.2.2,unavailable[0m
+[0;31mE (20343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (20343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (20343) task_wdt: Tasks currently running:[0m
+[0;31mE (20343) task_wdt: CPU 0: main[0m
+[0;31mE (20343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (20343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x400D7FD5:0x3FFB4B20 0x400D8046:0x3FFB4B50 0x400D80ED:0x3FFB4B70 0x400D8E76:0x3FFB4BE0 0x400D8F85:0x3FFB4C40 0x400D92C8:0x3FFB4C90 0x400D9301:0x3FFB4CB0 0x400DA489:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (20693) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i2,7822,0,0,OK,1,1470,2165,707007,132772,114108,78540,78540,0,none,none,52,45,0,160,v5.2.2,unavailable[0m
+[0;32mI (22433) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i2,7822,1,0,OK,1,1464,1469,1247496,259428,131744,78540,78540,0,none,none,52,45,0,160,v5.2.2,unavailable[0m
+[0;32mI (23103) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i2,7822,1,0,OK,1,1470,2165,654366,132772,114108,78540,78540,0,none,none,52,45,0,160,v5.2.2,unavailable[0m
+[0;32mI (24843) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i2,7822,2,0,OK,1,1464,1469,1247509,259428,131744,78540,78540,0,none,none,52,45,0,160,v5.2.2,unavailable[0m
+[0;31mE (25343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (25343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (25343) task_wdt: Tasks currently running:[0m
+[0;31mE (25343) task_wdt: CPU 0: main[0m
+[0;31mE (25343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (25343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x4000BFED:0x3FFB49C0 0x400863CF:0x3FFB49D0 0x4008A166:0x3FFB49F0 0x4008A115:0x3FFB4A10 0x40081EF2:0x3FFB4A30 0x4008B2E1:0x3FFB4A50 0x400DE419:0x3FFB4A70 0x400DD5DD:0x3FFB4A90 0x400D76D7:0x3FFB4AB0 0x400D800A:0x3FFB4AD0 0x400D8046:0x3FFB4B00 0x400D80ED:0x3FFB4B20 0x400D8C5A:0x3FFB4B90 0x400D8E3A:0x3FFB4BE0 0x400D8F85:0x3FFB4C40 0x400D92C8:0x3FFB4C90 0x400D9301:0x3FFB4CB0 0x400DA489:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (25583) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i2,7822,2,0,OK,1,1470,2165,726096,132772,114108,78540,78540,0,none,none,52,45,0,160,v5.2.2,unavailable[0m
+[0;32mI (28473) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i3,7823,0,0,OK,1,1452,888,767106,259428,171404,78540,78540,0,none,none,48,54,0,160,v5.2.2,unavailable[0m
+[0;32mI (28953) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i3,7823,0,0,OK,1,1458,1395,463501,172432,154596,78540,78540,0,none,none,48,54,0,160,v5.2.2,unavailable[0m
+[0;32mI (30173) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i3,7823,1,0,OK,1,1452,888,767175,259428,171404,78540,78540,0,none,none,48,54,0,160,v5.2.2,unavailable[0m
+[0;31mE (30343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (30343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (30343) task_wdt: Tasks currently running:[0m
+[0;31mE (30343) task_wdt: CPU 0: main[0m
+[0;31mE (30343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (30343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x4008A141:0x3FFB49D0 0x4008A186:0x3FFB49F0 0x40081DD5:0x3FFB4A10 0x40081E30:0x3FFB4A30 0x40081E65:0x3FFB4A50 0x4008B2D5:0x3FFB4A70 0x400DDE11:0x3FFB4A90 0x400D7F77:0x3FFB4AB0 0x400D7FA6:0x3FFB4AD0 0x400D8046:0x3FFB4B00 0x400D80ED:0x3FFB4B20 0x400D8C5A:0x3FFB4B90 0x400D8E86:0x3FFB4BE0 0x400D8F85:0x3FFB4C40 0x400D92C8:0x3FFB4C90 0x400D9301:0x3FFB4CB0 0x400DA489:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (30713) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i3,7823,1,0,OK,1,1458,1395,533315,172432,154596,78540,78540,0,none,none,48,54,0,160,v5.2.2,unavailable[0m
+[0;32mI (31933) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i3,7823,2,0,OK,1,1452,888,767168,259428,171404,78540,78540,0,none,none,48,54,0,160,v5.2.2,unavailable[0m
+[0;32mI (32413) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i3,7823,2,0,OK,1,1458,1395,463512,172432,154596,78540,78540,0,none,none,48,54,0,160,v5.2.2,unavailable[0m
+[0;31mE (35343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (35343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (35343) task_wdt: Tasks currently running:[0m
+[0;31mE (35343) task_wdt: CPU 0: main[0m
+[0;31mE (35343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (35343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x4000BFED:0x3FFB4980 0x400863CF:0x3FFB4990 0x4008A166:0x3FFB49B0 0x4008A1B2:0x3FFB49D0 0x40081DD5:0x3FFB49F0 0x40081E30:0x3FFB4A10 0x40081E65:0x3FFB4A30 0x4008B2D5:0x3FFB4A50 0x400DDE11:0x3FFB4A70 0x400D7F77:0x3FFB4A90 0x400D7FA6:0x3FFB4AB0 0x400D8046:0x3FFB4AE0 0x400D80ED:0x3FFB4B00 0x400D8C5A:0x3FFB4B70 0x400D8E3A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (35983) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i4,7824,0,0,OK,1,1476,1432,1294260,259428,135084,78520,78520,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (36013) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i4,7824,0,0,OK,1,1476,1432,16727,136112,135052,78520,78520,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (37773) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i4,7824,1,0,OK,1,1476,1432,1222602,259428,135084,78520,78520,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (37803) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i4,7824,1,0,OK,1,1476,1432,16743,136112,135052,78520,78520,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (39553) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i4,7824,2,0,OK,1,1476,1432,1222604,259428,135084,78520,78520,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;32mI (39583) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i4,7824,2,0,OK,1,1476,1432,16726,136112,135052,78520,78520,0,none,none,47,51,0,160,v5.2.2,unavailable[0m
+[0;31mE (40343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (40343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (40343) task_wdt: Tasks currently running:[0m
+[0;31mE (40343) task_wdt: CPU 0: main[0m
+[0;31mE (40343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (40343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x400ED24D:0x3FFB4AE0 0x400D80B6:0x3FFB4B00 0x400D8C5A:0x3FFB4B70 0x400D8E3A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABD6:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (42343) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i5,7825,0,0,OK,1,1446,848,714507,259428,174816,78520,78520,0,none,none,49,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (42903) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i5,7825,0,0,OK,1,1452,1451,545079,175844,160872,78520,78520,0,none,none,49,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (43983) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i5,7825,1,0,OK,1,1446,848,714554,259428,174816,78520,78520,0,none,none,49,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (44543) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i5,7825,1,0,OK,1,1452,1451,545071,175844,160872,78520,78520,0,none,none,49,52,0,160,v5.2.2,unavailable[0m
+[0;31mE (45343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (45343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (45343) task_wdt: Tasks currently running:[0m
+[0;31mE (45343) task_wdt: CPU 0: main[0m
+[0;31mE (45343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (45343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x4000BFED:0x3FFB4980 0x400863CF:0x3FFB4990 0x4008A166:0x3FFB49B0 0x4008A1B2:0x3FFB49D0 0x40081DD5:0x3FFB49F0 0x40081E30:0x3FFB4A10 0x40081E65:0x3FFB4A30 0x4008B2D5:0x3FFB4A50 0x400DDE11:0x3FFB4A70 0x400D7F77:0x3FFB4A90 0x400D7FA6:0x3FFB4AB0 0x400D8046:0x3FFB4AE0 0x400D80ED:0x3FFB4B00 0x400D8C5A:0x3FFB4B70 0x400D8E3A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (45703) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i5,7825,2,0,OK,1,1446,848,786297,259428,174816,78520,78520,0,none,none,49,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (46263) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i5,7825,2,0,OK,1,1452,1451,545071,175844,160872,78520,78520,0,none,none,49,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (49873) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i6,7826,0,0,OK,1,1470,1199,988498,259428,151280,46480,46480,0,none,none,48,55,0,160,v5.2.2,unavailable[0m
+[0;31mE (50343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (50343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (50343) task_wdt: Tasks currently running:[0m
+[0;31mE (50343) task_wdt: CPU 0: main[0m
+[0;31mE (50343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (50343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x400D8C4B:0x3FFB4B90 0x400D8E3A:0x3FFB4BE0 0x400D8F85:0x3FFB4C40 0x400D92C8:0x3FFB4C90 0x400D9301:0x3FFB4CB0 0x400DA489:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (50493) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i6,7826,0,0,OK,1,1482,1813,600233,152308,125760,46480,46480,0,none,none,48,55,0,160,v5.2.2,unavailable[0m
+[0;32mI (52033) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i6,7826,1,0,OK,1,1470,1199,988558,259428,151280,46480,46480,0,none,none,48,55,0,160,v5.2.2,unavailable[0m
+[0;32mI (52603) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i6,7826,1,0,OK,1,1482,1813,551436,152308,125760,46480,46480,0,none,none,48,55,0,160,v5.2.2,unavailable[0m
+[0;32mI (54143) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i6,7826,2,0,OK,1,1470,1199,988542,259428,151280,46480,46480,0,none,none,48,55,0,160,v5.2.2,unavailable[0m
+[0;32mI (54713) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i6,7826,2,0,OK,1,1482,1813,551434,152308,125760,46480,46480,0,none,none,48,55,0,160,v5.2.2,unavailable[0m
+[0;31mE (55343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (55343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (55343) task_wdt: Tasks currently running:[0m
+[0;31mE (55343) task_wdt: CPU 0: main[0m
+[0;31mE (55343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (55343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x400D7FAD:0x3FFB4AB0 0x400D8046:0x3FFB4AE0 0x400D80ED:0x3FFB4B00 0x400D8C5A:0x3FFB4B70 0x400D8E3A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABD6:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (58853) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i7,7827,0,0,OK,1,1476,1461,1225767,259428,133496,46480,46480,0,none,none,53,43,0,160,v5.2.2,unavailable[0m
+[0;32mI (59413) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i7,7827,0,0,OK,1,1482,2064,544215,134524,112468,46480,46480,0,none,none,53,43,0,160,v5.2.2,unavailable[0m
+[0;31mE (60343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (60343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (60343) task_wdt: Tasks currently running:[0m
+[0;31mE (60343) task_wdt: CPU 0: main[0m
+[0;31mE (60343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (60343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x400D8C83:0x3FFB4B70 0x400D8E3A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (61243) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i7,7827,1,0,OK,1,1476,1461,1272710,259428,133496,46480,46480,0,none,none,53,43,0,160,v5.2.2,unavailable[0m
+[0;32mI (61803) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i7,7827,1,0,OK,1,1482,2064,544248,134524,112468,46480,46480,0,none,none,53,43,0,160,v5.2.2,unavailable[0m
+[0;32mI (63583) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i7,7827,2,0,OK,1,1476,1461,1225829,259428,133496,46480,46480,0,none,none,53,43,0,160,v5.2.2,unavailable[0m
+[0;32mI (64143) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i7,7827,2,0,OK,1,1482,2064,544219,134524,112468,46480,46480,0,none,none,53,43,0,160,v5.2.2,unavailable[0m
+[0;31mE (65343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (65343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (65343) task_wdt: Tasks currently running:[0m
+[0;31mE (65343) task_wdt: CPU 0: main[0m
+[0;31mE (65343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (65343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x4008B019:0x3FFB4A10 0x4008A679:0x3FFB4A30 0x4008A0A1:0x3FFB4A50 0x4008A0F0:0x3FFB4A70 0x40081EF2:0x3FFB4A90 0x4008B2E1:0x3FFB4AB0 0x400DE419:0x3FFB4AD0 0x400DD5DD:0x3FFB4AF0 0x400D76D7:0x3FFB4B10 0x400D76F6:0x3FFB4B30 0x400D7701:0x3FFB4B50 0x400D8C8D:0x3FFB4B70 0x400D8E3A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABD6:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (67243) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i8,7828,0,0,OK,1,1446,972,821116,259428,165500,46480,46480,0,none,none,48,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (67823) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i8,7828,0,0,OK,1,1452,1624,571421,166528,148736,46480,46480,0,none,none,48,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (69063) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i8,7828,1,0,OK,1,1446,972,821164,259428,165500,46480,46480,0,none,none,48,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (69643) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i8,7828,1,0,OK,1,1452,1624,571420,166528,148736,46480,46480,0,none,none,48,52,0,160,v5.2.2,unavailable[0m
+[0;31mE (70343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (70343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (70343) task_wdt: Tasks currently running:[0m
+[0;31mE (70343) task_wdt: CPU 0: main[0m
+[0;31mE (70343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (70343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x400D6B2C:0x3FFB4B00 0x400D81ED:0x3FFB4B40 0x400D8D0A:0x3FFB4B70 0x400D8E3A:0x3FFB4BC0 0x400DA066:0x3FFB4C20 0x400DA251:0x3FFB4CB0 0x400DA3FF:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (70923) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i8,7828,2,0,OK,1,1446,972,871875,259428,165500,46480,46480,0,none,none,48,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (71513) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i8,7828,2,0,OK,1,1452,1624,571437,166528,148736,46480,46480,0,none,none,48,52,0,160,v5.2.2,unavailable[0m
+[0;32mI (73943) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i9,7829,0,0,OK,1,1452,1000,845037,259428,164912,46480,46480,0,none,none,52,48,0,160,v5.2.2,unavailable[0m
+[0;32mI (73993) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i9,7829,0,0,OK,1,1452,1032,39320,165940,164780,46480,46480,0,none,none,52,48,0,160,v5.2.2,unavailable[0m
+[0;32mI (75203) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i9,7829,1,0,OK,1,1452,1000,845124,259428,164912,46480,46480,0,none,none,52,48,0,160,v5.2.2,unavailable[0m
+[0;32mI (75253) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i9,7829,1,0,OK,1,1452,1032,39325,165940,164780,46480,46480,0,none,none,52,48,0,160,v5.2.2,unavailable[0m
+[0;31mE (75343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (75343) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (75343) task_wdt: Tasks currently running:[0m
+[0;31mE (75343) task_wdt: CPU 0: main[0m
+[0;31mE (75343) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (75343) task_wdt: Print CPU 0 (current core) backtrace[0m
+Backtrace: 0x400DC4AB:0x3FFB0E10 0x400DC870:0x3FFB0E30 0x40082F55:0x3FFB0E60 0x4000BFED:0x3FFB4A20 0x400863CF:0x3FFB4A30 0x4008A166:0x3FFB4A50 0x4008A1B2:0x3FFB4A70 0x40081DD5:0x3FFB4A90 0x40081E30:0x3FFB4AB0 0x40081E65:0x3FFB4AD0 0x4008B2D5:0x3FFB4AF0 0x400DDE11:0x3FFB4B10 0x400D8277:0x3FFB4B30 0x400D828C:0x3FFB4B50 0x400D82B0:0x3FFB4B70 0x400D8325:0x3FFB4BB0 0x400D9B05:0x3FFB4BE0 0x400DA2EA:0x3FFB4CF0 0x400DAA31:0x3FFB4EF0 0x400DABF5:0x3FFB4F70 0x400EEA28:0x3FFB4FE0 0x4008602D:0x3FFB5010
+[0;32mI (76523) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,initial,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i9,7829,2,0,OK,1,1452,1000,845098,259428,164912,46480,46480,0,none,none,52,48,0,160,v5.2.2,unavailable[0m
+[0;32mI (76573) path_benchmark: csv,esp32_20260808T131336Z_DStarLite_dynamic_100x100_density20_i0,DStarLite,repair,100,100,20,path_blocking,esp32_dynamic_100x100_density20_i9,7829,2,0,OK,1,1452,1032,39330,165940,164780,46480,46480,0,none,none,52,48,0,160,v5.2.2,unavailable[0m
+planner_scenario_complete

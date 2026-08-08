@@ -1,0 +1,4 @@
+run_id,planner,scenario,start_time,end_time,firmware_commit,device,timeout,completion_marker_seen,reset_method
+esp32_20260808T132446Z,AStar,initial_500x500_density20,2026-08-08T05:24:46.124829+00:00,2026-08-08T05:24:59.484737+00:00,unavailable,/dev/ttyACM0,180,1,flash
+esp32_20260808T132446Z,JPS,initial_500x500_density20,2026-08-08T05:24:59.484847+00:00,2026-08-08T05:25:13.380120+00:00,unavailable,/dev/ttyACM0,180,1,flash
+esp32_20260808T132446Z,DStarLite,initial_500x500_density20,2026-08-08T05:25:13.380237+00:00,2026-08-08T05:25:27.271698+00:00,unavailable,/dev/ttyACM0,180,1,flash

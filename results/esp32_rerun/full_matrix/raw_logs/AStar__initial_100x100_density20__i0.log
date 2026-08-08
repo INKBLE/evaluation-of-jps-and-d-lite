@@ -1,0 +1,65 @@
+`0 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da30h ( 55856) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da58 vaddr=3ffb0000 size=0221ch (  8732) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fc7c vaddr=40080000 size=0039ch (   924) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1f25ch (127580) map[0m
+[0;32mI (181) esp_image: segment 4: paddr=0003f284 vaddr=4008039c size=0c4a8h ( 50344) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (228) cpu_start: Pro cpu start user code[0m
+[0;32mI (228) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (228) cpu_start: Application information:[0m
+[0;32mI (231) cpu_start: Project name:     path_planner_benchmark[0m
+[0;32mI (237) cpu_start: App version:      1[0m
+[0;32mI (242) cpu_start: Compile time:     Aug  8 2026 11:57:02[0m
+[0;32mI (248) cpu_start: ELF file SHA256:  d0582cb2c...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B90 len 0002D470 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008C844 len 000137BC (77 KiB): IRAM[0m
+[0;32mI (312) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (343) path_benchmark: csv_header,experiment_id,planner,phase,grid_width,grid_height,density,update_mode,map_id,seed,repetition,warmup,status,success,path_cost,expanded_nodes,elapsed_us,free_heap_before,free_heap_after,since_boot_minimum_free_heap_before,since_boot_minimum_free_heap_after,failed_alloc_bytes,failure_stage,failure_reason,update_x,update_y,psram_enabled,cpu_frequency_mhz,esp_idf_version,firmware_git_commit[0m
+[0;32mI (373) path_benchmark: profile,planner=AStar,scenario=initial_100x100_density20,instance_start=0,instance_count=10,warmups=1,measurements=3,experiment_id=esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,firmware_git_commit=unavailable,psram_enabled=0,cpu_frequency_mhz=160,esp_idf_version=v5.2.2[0m
+[0;32mI (753) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i0,7820,0,0,OK,1,1452,1089,153463,259428,258536,128824,128824,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (943) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i0,7820,1,0,OK,1,1452,1089,153565,259428,258536,128824,128824,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (1133) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i0,7820,2,0,OK,1,1452,1089,153563,259428,258536,128824,128824,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (1563) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i1,7821,0,0,OK,1,1464,1270,183790,259428,258520,111140,111140,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (1783) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i1,7821,1,0,OK,1,1464,1270,183897,259428,258520,111140,111140,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (2003) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i1,7821,2,0,OK,1,1464,1270,183885,259428,258520,111140,111140,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (2473) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i2,7822,0,0,OK,1,1464,1431,210269,259428,258520,88876,88876,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (2713) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i2,7822,1,0,OK,1,1464,1431,210346,259428,258520,88876,88876,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (2953) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i2,7822,2,0,OK,1,1464,1431,210349,259428,258520,88876,88876,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (3383) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i3,7823,0,0,OK,1,1452,1312,190634,259428,258536,88876,88876,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (3603) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i3,7823,1,0,OK,1,1452,1312,190739,259428,258536,88876,88876,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (3833) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i3,7823,2,0,OK,1,1452,1312,190735,259428,258536,88876,88876,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (4373) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i4,7824,0,0,OK,1,1476,1572,238571,259428,258504,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (4643) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i4,7824,1,0,OK,1,1476,1572,238667,259428,258504,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (4913) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i4,7824,2,0,OK,1,1476,1572,238671,259428,258504,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (5263) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i5,7825,0,0,OK,1,1446,1069,149947,259428,258544,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (5443) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i5,7825,1,0,OK,1,1446,1069,150056,259428,258544,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (5623) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i5,7825,2,0,OK,1,1446,1069,150046,259428,258544,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (6113) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i6,7826,0,0,OK,1,1470,1461,216445,259428,258512,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (6363) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i6,7826,1,0,OK,1,1470,1461,216543,259428,258512,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (6613) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i6,7826,2,0,OK,1,1470,1461,216549,259428,258512,82164,82164,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (7143) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i7,7827,0,0,OK,1,1476,1607,237985,259428,258504,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (7413) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i7,7827,1,0,OK,1,1476,1607,238090,259428,258504,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (7683) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i7,7827,2,0,OK,1,1476,1607,238075,259428,258504,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (8073) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i8,7828,0,0,OK,1,1446,1187,172003,259428,258544,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (8283) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i8,7828,1,0,OK,1,1446,1187,172097,259428,258544,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (8493) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i8,7828,2,0,OK,1,1446,1187,172102,259428,258544,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (8873) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i9,7829,0,0,OK,1,1452,1086,154701,259428,258536,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (9063) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i9,7829,1,0,OK,1,1452,1086,154794,259428,258536,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+[0;32mI (9253) path_benchmark: csv,esp32_20260808T132635Z_AStar_initial_100x100_density20_i0,AStar,initial,100,100,20,none,esp32_initial_100x100_density20_i9,7829,2,0,OK,1,1452,1086,154786,259428,258536,73796,73796,0,none,none,-1,-1,0,160,v5.2.2,unavailable[0m
+planner_scenario_complete

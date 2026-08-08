@@ -1,0 +1,2 @@
+run_id,planner,scenario,start_time,end_time,firmware_commit,device,timeout,completion_marker_seen,reset_method
+esp32_20260808T131013Z,AStar,initial_50x50_density10,2026-08-08T05:10:13.727508+00:00,2026-08-08T05:10:27.969190+00:00,unavailable,/dev/ttyACM0,90,1,flash

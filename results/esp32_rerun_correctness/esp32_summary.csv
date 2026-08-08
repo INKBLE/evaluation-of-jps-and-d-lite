@@ -1,0 +1,4 @@
+planner,scenario,phase,attempted_count,completed_count,completion_rate,oom_count,other_failure_count,median_elapsed_us_completed_only,q1_elapsed_us_completed_only,q3_elapsed_us_completed_only,p95_elapsed_us_completed_only,median_expanded_nodes_completed_only,since_boot_minimum_free_heap,failure_stages,notes
+AStar,initial_50x50_density10,initial,1,1,1.0,0,0,39971.0,39971.0,39971.0,39971.0,263.0,249500,,since_boot_minimum_free_heap is a global low-water mark
+DStarLite,initial_50x50_density10,initial,1,1,1.0,0,0,202516.0,202516.0,202516.0,202516.0,215.0,257712,,since_boot_minimum_free_heap is a global low-water mark
+JPS,initial_50x50_density10,initial,1,1,1.0,0,0,37770.0,37770.0,37770.0,37770.0,133.0,253572,,since_boot_minimum_free_heap is a global low-water mark

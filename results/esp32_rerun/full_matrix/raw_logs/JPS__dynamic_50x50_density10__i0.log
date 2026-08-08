@@ -1,0 +1,96 @@
++}���с        RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da30h ( 55856) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da58 vaddr=3ffb0000 size=0221ch (  8732) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fc7c vaddr=40080000 size=0039ch (   924) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1f25ch (127580) map[0m
+[0;32mI (181) esp_image: segment 4: paddr=0003f284 vaddr=4008039c size=0c4a8h ( 50344) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (228) cpu_start: Pro cpu start user code[0m
+[0;32mI (228) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (228) cpu_start: Application information:[0m
+[0;32mI (231) cpu_start: Project name:     path_planner_benchmark[0m
+[0;32mI (237) cpu_start: App version:      1[0m
+[0;32mI (242) cpu_start: Compile time:     Aug  8 2026 11:57:02[0m
+[0;32mI (248) cpu_start: ELF file SHA256:  2912aadb4...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2B90 len 0002D470 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008C844 len 000137BC (77 KiB): IRAM[0m
+[0;32mI (312) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (343) path_benchmark: csv_header,experiment_id,planner,phase,grid_width,grid_height,density,update_mode,map_id,seed,repetition,warmup,status,success,path_cost,expanded_nodes,elapsed_us,free_heap_before,free_heap_after,since_boot_minimum_free_heap_before,since_boot_minimum_free_heap_after,failed_alloc_bytes,failure_stage,failure_reason,update_x,update_y,psram_enabled,cpu_frequency_mhz,esp_idf_version,firmware_git_commit[0m
+[0;32mI (373) path_benchmark: profile,planner=JPS,scenario=dynamic_50x50_density10,instance_start=0,instance_count=10,warmups=1,measurements=3,experiment_id=esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,firmware_git_commit=unavailable,psram_enabled=0,cpu_frequency_mhz=160,esp_idf_version=v5.2.2[0m
+[0;32mI (693) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i0,4410,0,0,OK,1,704,133,37463,285328,282904,249168,249168,0,none,none,24,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (733) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i0,4410,0,0,OK,1,704,127,35482,285328,282912,249168,249168,0,none,none,24,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (883) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i0,4410,1,0,OK,1,704,133,37509,285328,282904,249168,249168,0,none,none,24,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (923) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i0,4410,1,0,OK,1,704,127,35484,285328,282912,249168,249168,0,none,none,24,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (1073) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i0,4410,2,0,OK,1,704,133,37509,285328,282904,249168,249168,0,none,none,24,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (1113) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i0,4410,2,0,OK,1,704,127,35477,285328,282912,249168,249168,0,none,none,24,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (1433) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i1,4411,0,0,OK,1,704,116,33870,285328,282944,243444,243444,0,none,none,25,26,0,160,v5.2.2,unavailable[0m
+[0;32mI (1483) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i1,4411,0,0,OK,1,704,122,36771,285328,282936,243444,243444,0,none,none,25,26,0,160,v5.2.2,unavailable[0m
+[0;32mI (1623) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i1,4411,1,0,OK,1,704,116,33932,285328,282944,243444,243444,0,none,none,25,26,0,160,v5.2.2,unavailable[0m
+[0;32mI (1673) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i1,4411,1,0,OK,1,704,122,36764,285328,282936,243444,243444,0,none,none,25,26,0,160,v5.2.2,unavailable[0m
+[0;32mI (1813) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i1,4411,2,0,OK,1,704,116,33931,285328,282944,243444,243444,0,none,none,25,26,0,160,v5.2.2,unavailable[0m
+[0;32mI (1863) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i1,4411,2,0,OK,1,704,122,36767,285328,282936,243444,243444,0,none,none,25,26,0,160,v5.2.2,unavailable[0m
+[0;32mI (2163) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i2,4412,0,0,OK,1,710,104,30952,285328,282960,240368,240368,0,none,none,24,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (2203) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i2,4412,0,0,OK,1,710,83,24534,285328,282936,240368,240368,0,none,none,24,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (2343) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i2,4412,1,0,OK,1,710,104,31010,285328,282960,240368,240368,0,none,none,24,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (2383) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i2,4412,1,0,OK,1,710,83,24538,285328,282936,240368,240368,0,none,none,24,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (2523) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i2,4412,2,0,OK,1,710,104,31012,285328,282960,240368,240368,0,none,none,24,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (2563) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i2,4412,2,0,OK,1,710,83,24534,285328,282936,240368,240368,0,none,none,24,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (2803) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i3,4413,0,0,OK,1,704,90,26616,285328,282944,240368,240368,0,none,none,23,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (2843) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i3,4413,0,0,OK,1,704,91,26893,285328,282936,240368,240368,0,none,none,23,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (2953) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i3,4413,1,0,OK,1,704,90,26674,285328,282944,240368,240368,0,none,none,23,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (2993) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i3,4413,1,0,OK,1,704,91,26886,285328,282936,240368,240368,0,none,none,23,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3113) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i3,4413,2,0,OK,1,704,90,26677,285328,282944,240368,240368,0,none,none,23,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3153) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i3,4413,2,0,OK,1,704,91,26892,285328,282936,240368,240368,0,none,none,23,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3423) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i4,4414,0,0,OK,1,710,86,25113,285328,282920,240368,240368,0,none,none,26,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3463) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i4,4414,0,0,OK,1,710,88,25424,285328,282912,240368,240368,0,none,none,26,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3583) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i4,4414,1,0,OK,1,710,86,25169,285328,282920,240368,240368,0,none,none,26,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3623) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i4,4414,1,0,OK,1,710,88,25427,285328,282912,240368,240368,0,none,none,26,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3743) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i4,4414,2,0,OK,1,710,86,25169,285328,282920,240368,240368,0,none,none,26,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3783) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i4,4414,2,0,OK,1,710,88,25424,285328,282912,240368,240368,0,none,none,26,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (3993) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i5,4415,0,0,OK,1,698,73,21920,285328,283912,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4023) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i5,4415,0,0,OK,1,698,75,22823,285328,283912,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4133) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i5,4415,1,0,OK,1,698,73,21985,285328,283912,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4163) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i5,4415,1,0,OK,1,698,75,22820,285328,283912,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4273) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i5,4415,2,0,OK,1,698,73,21981,285328,283912,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4303) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i5,4415,2,0,OK,1,698,75,22824,285328,283912,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4473) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i6,4416,0,0,OK,1,692,50,15726,285328,283952,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4503) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i6,4416,0,0,OK,1,692,51,16394,285328,283960,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4583) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i6,4416,1,0,OK,1,692,50,15779,285328,283952,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4613) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i6,4416,1,0,OK,1,692,51,16396,285328,283960,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4693) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i6,4416,2,0,OK,1,692,50,15780,285328,283952,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4723) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i6,4416,2,0,OK,1,692,51,16393,285328,283960,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4883) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i7,4417,0,0,OK,1,686,39,14277,285328,283984,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4913) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i7,4417,0,0,OK,1,698,57,17105,285328,283968,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (4993) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i7,4417,1,0,OK,1,686,39,14335,285328,283984,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (5023) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i7,4417,1,0,OK,1,698,57,17101,285328,283968,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (5103) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i7,4417,2,0,OK,1,686,39,14336,285328,283984,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (5133) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i7,4417,2,0,OK,1,698,57,17104,285328,283968,240368,240368,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (5493) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i8,4418,0,0,OK,1,710,111,33861,285328,282944,230940,230940,0,none,none,26,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (5553) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i8,4418,0,0,OK,1,716,166,45395,285328,282928,230940,230940,0,none,none,26,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (5713) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i8,4418,1,0,OK,1,710,111,33915,285328,282944,230940,230940,0,none,none,26,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (5773) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i8,4418,1,0,OK,1,716,166,45401,285328,282928,230940,230940,0,none,none,26,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (5933) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i8,4418,2,0,OK,1,710,111,33914,285328,282944,230940,230940,0,none,none,26,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (5993) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i8,4418,2,0,OK,1,716,166,45396,285328,282928,230940,230940,0,none,none,26,24,0,160,v5.2.2,unavailable[0m
+[0;32mI (6193) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i9,4419,0,0,OK,1,698,70,21138,285328,283912,230940,230940,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (6233) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i9,4419,0,0,OK,1,698,75,22867,285328,283920,230940,230940,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (6323) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i9,4419,1,0,OK,1,698,70,21201,285328,283912,230940,230940,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (6363) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i9,4419,1,0,OK,1,698,75,22865,285328,283920,230940,230940,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (6453) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,initial,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i9,4419,2,0,OK,1,698,70,21195,285328,283912,230940,230940,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+[0;32mI (6493) path_benchmark: csv,esp32_20260808T132635Z_JPS_dynamic_50x50_density10_i0,JPS,replan,50,50,10,path_blocking,esp32_dynamic_50x50_density10_i9,4419,2,0,OK,1,698,75,22868,285328,283920,230940,230940,0,none,none,25,25,0,160,v5.2.2,unavailable[0m
+planner_scenario_complete
